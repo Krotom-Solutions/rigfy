@@ -46,3 +46,7 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
+
+# Agent/AI
+.agents/
+skills-lock.json

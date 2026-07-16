@@ -1,76 +1,74 @@
-# Rigfy Scraper
+# 💻 Rigfy SaaS - Precificação Inteligente de Hardware
 
-Backend de coleta de dados do Rigfy — precificação inteligente de hardware usado.
+O **Rigfy** é uma plataforma SaaS (Software as a Service) desenvolvida para precificação inteligente de hardware usado. Ele utiliza uma arquitetura de **Monorepo** moderna, separando de forma clara o Frontend (Interface do Usuário) e o Backend (Coleta de Dados, API e Machine Learning).
 
-## Setup
+---
 
-### 1. Clonar e instalar dependências
+## 🏗 Arquitetura do Projeto (Workflow)
+
+O projeto é dividido em duas partes principais que se comunicam através de uma API REST:
+
+### 1. Backend (Python + FastAPI)
+Localizado na pasta `/backend`. Responsável pela lógica pesada do sistema:
+- **Scraper Automático:** Utiliza `APScheduler` e `Scrapling` para raspar dados de anúncios de hardware diariamente (via ZenRows para contornar bloqueios).
+- **Processamento e ML:** Estrutura e limpa os dados usando `pandas` e utiliza modelos do `Scikit-Learn` (Random Forest) para prever o preço ideal de revenda.
+- **Banco de Dados:** Utiliza PostgreSQL (Hospedado no Supabase) para armazenar os milhares de anúncios coletados.
+- **Servidor:** API de alta performance utilizando o framework `FastAPI`.
+
+### 2. Frontend (React 19 + Vite + Tailwind CSS v4)
+Localizado na pasta `/frontend`. Interface responsiva e moderna:
+- **Design:** Segue um estilo Brutalista/Minimalista, focado em alta conversão e experiência de usuário limpa.
+- **Autenticação:** Integração direta com **Supabase Auth** (Login Social com Google e Email/Senha).
+- **Componentização:** Utiliza React Router para SPA (Single Page Application) e componentes modulares.
+
+---
+
+## 🚀 Como Executar Localmente
+
+### Pré-requisitos
+- Python 3.12+
+- Node.js 20+
+- Banco de Dados PostgreSQL (Local ou Nuvem)
+
+### Configurando o Backend
 ```bash
-git clone <repo>
-cd rigfy-scraper
+cd backend
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate  # No Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
-
-### 2. Configurar variáveis de ambiente
+> Crie um arquivo `.env` baseado no `.env.example` com sua `DATABASE_URL` e `ZENROWS_API_KEY`.
 ```bash
-cp .env.example .env
-# Editar .env com sua ZENROWS_API_KEY e DATABASE_URL
-```
-
-### 3. Iniciar o PostgreSQL
-```bash
-# Com Docker:
-docker run -d \
-  --name rigfy-db \
-  -e POSTGRES_USER=rigfy \
-  -e POSTGRES_PASSWORD=rigfy123 \
-  -e POSTGRES_DB=rigfy \
-  -p 5432:5432 \
-  postgres:15
-```
-
-### 4. Criar as tabelas
-```bash
-python scripts/init_db.py
-```
-
-### 5. Testar o scraper
-```bash
-python scripts/run_once.py
-```
-
-### 6. Iniciar o servidor
-```bash
+# Iniciar o servidor
 uvicorn app.main:app --reload --port 8000
 ```
 
-## Endpoints
+### Configurando o Frontend
+```bash
+cd frontend
+npm install
+```
+> Crie um arquivo `.env` na pasta frontend com suas variáveis do Supabase (`VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`) e a URL do backend (`VITE_API_URL=http://localhost:8000`).
+```bash
+# Iniciar o ambiente de desenvolvimento
+npm run dev
+```
+
+---
+
+## ☁️ Deploy (Produção)
+
+O ambiente de produção foi desenhado para ser **Serverless e Contínuo**:
+- **Banco de Dados & Auth:** [Supabase](https://supabase.com)
+- **Backend API:** [Render](https://render.com) (Hospedagem nativa de Python lendo o arquivo `render.yaml`)
+- **Frontend SPA:** [Netlify](https://netlify.com) ou Vercel.
+
+---
+
+## 📚 Endpoints Principais da API
 
 | Método | Rota | Descrição |
 |--------|------|-----------|
-| GET | `/` | Status do serviço |
-| GET | `/status` | Estatísticas do banco + próximo job |
-| POST | `/collect/trigger` | Dispara coleta manualmente |
-
-## ZenRows
-
-Crie sua conta em [zenrows.com](https://www.zenrows.com) e copie a API key para o `.env`.
-O plano gratuito oferece 1.000 créditos — suficiente para testar.
-Cada página com `js_render=true` + `premium_proxy=true` consome 25 créditos.
-1.000 créditos = 40 páginas = ~800 anúncios no teste inicial.
-
-## Arquitetura
-
-```
-ZenRows (fetch + JS render)
-    ↓
-Scrapling Adaptor (parse HTML)
-    ↓
-Extractor (regex → specs estruturadas)
-    ↓
-PostgreSQL (armazenamento)
-    ↓
-FastAPI /status (monitoramento)
-```
+| GET | `/stats/resumo` | Retorna o volume total de anúncios coletados e hardware monitorado. |
+| GET | `/price/predict` | Recebe parâmetros de hardware e retorna a faixa de preço ideal usando ML. |
+| POST | `/collect/trigger` | Dispara manualmente o robô de coleta no background. |
