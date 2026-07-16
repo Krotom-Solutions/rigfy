@@ -1,0 +1,50 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/jetbrains-mono/400.css';
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-bg: #E8E6E1;
+  --color-bg-subtle: #DCDAD6;
+  --color-surface: rgba(255, 255, 255, 0.3);
+  --color-surface-2: rgba(255, 255, 255, 0.5);
+  --color-border: #141414;
+  --color-border-strong: #141414;
+  --color-text-primary: #141414;
+  --color-text-secondary: rgba(20, 20, 20, 0.8);
+  --color-text-muted: rgba(20, 20, 20, 0.6);
+  --color-black: #141414;
+  --color-white: #FFFFFF;
+
+  --text-2xs: 10px;
+  --text-2xs--line-height: 1.4;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+  }
+  /* Remove aparência padrão dos selects no Safari */
+  select {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}

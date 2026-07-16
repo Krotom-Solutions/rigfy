@@ -21,5 +21,12 @@ class Settings(BaseSettings):
     app_env: str = "development"
     log_level: str = "INFO"
 
+    # CORS — origens permitidas pelo frontend
+    cors_origins: list[str] = [
+        "http://localhost:5173",   # Vite dev
+        "http://localhost:3000",   # CRA / outros
+        "http://localhost:4173",   # Vite preview
+    ]
+
 
 settings = Settings()
