@@ -8,7 +8,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def extrair_specs(titulo: str, descricao: str | None = None) -> dict:
+def extrair_specs(titulo: str, descricao: str | None = None, categoria_forcada: str | None = None) -> dict:
     """
     Extrai specs técnicas de hardware do texto do anúncio.
     Retorna dict com todos os campos estruturados.
@@ -16,7 +16,7 @@ def extrair_specs(titulo: str, descricao: str | None = None) -> dict:
     texto = f"{titulo} {descricao or ''}".lower()
 
     return {
-        "categoria":       _extrair_categoria(texto),
+        "categoria":       categoria_forcada or _extrair_categoria(texto),
         "marca":           _extrair_marca(texto),
         "cpu_fabricante":  _extrair_cpu_fabricante(texto),
         "cpu_linha":       _extrair_cpu_linha(texto),

@@ -37,6 +37,11 @@ class Anuncio(Base):
     storage_tipo: Mapped[str | None] = mapped_column(String(20), nullable=True)      # HDD, SSD SATA, NVMe
 
     gpu: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    # GPU specs e lançamento
+    gpu_vram_gb: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    gpu_memoria_tipo: Mapped[str | None] = mapped_column(String(20), nullable=True)
+    ano_lancamento: Mapped[int | None] = mapped_column(Integer, nullable=True)
+
     ano_fabricacao: Mapped[int | None] = mapped_column(Integer, nullable=True)
 
     tem_nota_fiscal: Mapped[bool] = mapped_column(Boolean, default=False)

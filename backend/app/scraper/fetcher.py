@@ -12,7 +12,16 @@ logger = logging.getLogger(__name__)
 # URLs de busca da OLX por categoria
 OLX_URLS = {
     "notebooks": "https://www.olx.com.br/brasil/informatica/computadores-e-acessorios/notebooks-e-netbooks",
-    "desktops": "https://www.olx.com.br/brasil/informatica/computadores-e-acessorios/computadores",
+    "desktops":  "https://www.olx.com.br/brasil/informatica/computadores-e-acessorios/computadores",
+    "gpus":      "https://www.olx.com.br/brasil/q-placa-de-video-usada",
+    "cpus":      "https://www.olx.com.br/brasil/q-processador-usado",
+}
+
+CATEGORIA_TIPO = {
+    "notebooks": "notebook",
+    "desktops":  "desktop",
+    "gpus":      "gpu",
+    "cpus":      "cpu",
 }
 
 

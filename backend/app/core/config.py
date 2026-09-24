@@ -5,7 +5,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
     # ZenRows
-    zenrows_api_key: str
+    zenrows_api_key: str = ""
     zenrows_base_url: str = "https://api.zenrows.com/v1/"
 
     # Database
@@ -21,11 +21,14 @@ class Settings(BaseSettings):
     app_env: str = "development"
     log_level: str = "INFO"
 
-    # CORS — origens permitidas pelo frontend
+    # CORS
     cors_origins: list[str] = [
-        "http://localhost:5173",   # Vite dev
-        "http://localhost:3000",   # CRA / outros
-        "http://localhost:4173",   # Vite preview
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "http://localhost:4173",
+        "https://rigfy.vercel.app",
+        "https://rigfy.netlify.app",
+        "*",
     ]
 
 

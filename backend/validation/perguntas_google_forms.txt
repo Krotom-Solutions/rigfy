@@ -1,0 +1,180 @@
+=== ITEM 01 ===
+Categoria: GPU
+Título: ASUS Prime RTX 5060 8GB ? NF + CAIXA
+Specs: GPU: RTX 5060 | RAM: 8GB
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 02 ===
+Categoria: GPU
+Título: Rtx 5060 msi shadow 2x
+Specs: GPU: RTX 5060
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 03 ===
+Categoria: GPU
+Título: ACER NITRO V15 RTX 3050 6GB - i5 13ª GERAÇÃO - 16GB DDR5 - SSD 512GB - 144HZ
+Specs: GPU: RTX 3050 | RAM: 6GB
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 04 ===
+Categoria: GPU
+Título: Rtx 5050 nova
+Specs: GPU: RTX 5050
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 05 ===
+Categoria: GPU
+Título: Placa de vídeo GT710
+Specs: Conforme título
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 06 ===
+Categoria: GPU
+Título: GTX 1660 Super Asus TUF3
+Specs: GPU: GTX 1660
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 07 ===
+Categoria: GPU
+Título: Rx 6600 51RISC r5 5600
+Specs: GPU: RX 6600
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 08 ===
+Categoria: CPU
+Título: Ryzen 7 5800X
+Specs: CPU: Ryzen 7
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 09 ===
+Categoria: CPU
+Título: Dell XPS 13 9300 Intel Core i7 10ª Geração | 16GB RAM | SSD 1TB | Telta Touch
+Specs: CPU: Core i7 | RAM: 16GB
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 10 ===
+Categoria: CPU
+Título: RYZEN 5 5500X3D (PEGO SEU PROCESSADOR NA TROCA!)
+Specs: CPU: Ryzen 5
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 11 ===
+Categoria: CPU
+Título: Vendo processador i5 3450
+Specs: Conforme título
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 12 ===
+Categoria: CPU
+Título: Processador Amd Ryzen 9 7900x Am5 12 Núcleos 5,7 Ghz (Usado)
+Specs: CPU: Ryzen 9
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 13 ===
+Categoria: CPU
+Título: Intel Core i5 4ª Geração + 16GB RAM  + Placa-Mãe LGA 1150 (Leia a descrição)
+Specs: CPU: Core i5 | RAM: 16GB
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 14 ===
+Categoria: CPU
+Título: Mini PC Dell 3060 core i3 oitava geração
+Specs: CPU: Core i3
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 15 ===
+Categoria: NOTEBOOK
+Título: Vendo notebook ( marca positivo)
+Specs: Conforme título
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 16 ===
+Categoria: NOTEBOOK
+Título: Notebook ACER
+Specs: Conforme título
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 17 ===
+Categoria: NOTEBOOK
+Título: Notebook Lenovo Core i5 8GB SSD256GB
+Specs: CPU: Core i5 | RAM: 8GB
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 18 ===
+Categoria: NOTEBOOK
+Título: Cooler de para Notebook Asus
+Specs: Conforme título
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 19 ===
+Categoria: NOTEBOOK
+Título: Notebook Lenovo I5-12Th-16GB RAM-SSD 256GB NVME-INTEL IRIS-XE-TELA 14HD
+Specs: GPU: INTEL IRIS | RAM: 16GB
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 20 ===
+Categoria: NOTEBOOK
+Título: Notebook Acer E1-571-2348M 15 6 HD Core i3 4GB 500GB Windows 10 Home office!!!
+Specs: CPU: Core i3 | RAM: 4GB
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 21 ===
+Categoria: NOTEBOOK
+Título: Notebook Samsung i5 11ª Geração
+Specs: Conforme título
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 22 ===
+Categoria: NOTEBOOK
+Título: Notebook Samsung
+Specs: Conforme título
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 23 ===
+Categoria: DESKTOP
+Título: PC Gamer Ryzen 5500x3d 32gb
+Specs: CPU: Ryzen 5 | RAM: 32GB
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 24 ===
+Categoria: DESKTOP
+Título: Mini PC Positivo i5 DDR5
+Specs: Conforme título
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 25 ===
+Categoria: DESKTOP
+Título: PC Gamer Completo + Teclado Mecânico + Mouse Logitech
+Specs: Conforme título
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 26 ===
+Categoria: DESKTOP
+Título: Memória RAM 4GB DDR3 1600MHz DIMM Para PC Desktop
+Specs: RAM: 4GB
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 27 ===
+Categoria: DESKTOP
+Título: Vendo PC gamer completo roda vários jogos como ,ff, fortnite ,cs, etc...
+Specs: Conforme título
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 28 ===
+Categoria: DESKTOP
+Título: Memória RAM DDR3 16 GB Micron 12800R
+Specs: RAM: 16GB
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 29 ===
+Categoria: DESKTOP
+Título: PC Gamer - Ryzen 5 + GTX 750 Ti
+Specs: GPU: GTX 750 TI | CPU: Ryzen 5
+Pergunta: Qual valor estimado de revenda (em R$)
+
+=== ITEM 30 ===
+Categoria: DESKTOP
+Título: Pc gamer
+Specs: Conforme título
+Pergunta: Qual valor estimado de revenda (em R$)
+

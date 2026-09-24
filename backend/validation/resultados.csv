@@ -1,0 +1,31 @@
+id,titulo,descricao,preco_real,categoria,marca,cpu_linha,cpu_geracao,ram_gb,ram_tipo,storage_gb,storage_tipo,gpu,gpu_vram_gb,gpu_memoria_tipo,ano_lancamento,previsto_rigfy,faixa_min,faixa_max,previsto_baseline
+391,ASUS Prime RTX 5060 8GB ? NF + CAIXA,,2600.0,gpu,Asus,,,8.0,,,,RTX 5060,,,,2014.7,1351.53,6265.67,1590.0
+446,Rtx 5060 msi shadow 2x,,2400.0,gpu,,,,,,,,RTX 5060,,,,635.15,488.26,1500.0,1590.0
+403,ACER NITRO V15 RTX 3050 6GB - i5 13ª GERAÇÃO - 16GB DDR5 - SSD 512GB - 144HZ,,4299.0,gpu,Acer,,13,6.0,DDR5,512.0,SSD,RTX 3050,,,,1500.0,731.52,4800.0,1590.0
+275,Rtx 5050 nova,,1750.0,gpu,,,,,,,,RTX 5050,,,,635.15,488.26,1500.0,1590.0
+281,Placa de vídeo GT710,,200.0,gpu,,,,,,,,,,,,766.87,463.09,1322.5,1590.0
+421,GTX 1660 Super Asus TUF3,,1200.0,gpu,Asus,,,,,,,GTX 1660,,,,1365.71,577.23,6295.72,1590.0
+483,Rx 6600 51RISC r5 5600,,2400.0,gpu,,,,,,,,RX 6600,,,,635.15,488.26,1457.5,1590.0
+278,Ryzen 7 5800X,,1299.0,cpu,,Ryzen 7,5000,,,,,,,,,1020.69,461.94,1305.62,900.0
+528,Dell XPS 13 9300 Intel Core i7 10ª Geração | 16GB RAM | SSD 1TB | Telta Touch,,5500.0,cpu,Dell,Core i7,10,16.0,,1024.0,SSD,,,,,1924.0,1300.0,4450.0,900.0
+494,RYZEN 5 5500X3D (PEGO SEU PROCESSADOR NA TROCA!),,1499.0,cpu,,Ryzen 5,5000,,,,,,,,,499.0,362.8,1073.85,900.0
+292,Vendo processador i5 3450,,150.0,cpu,,,,,,,,,,,,550.0,397.47,848.06,900.0
+443,"Processador Amd Ryzen 9 7900x Am5 12 Núcleos 5,7 Ghz (Usado)",,1399.0,cpu,,Ryzen 9,7000,,,,,,,,,2100.0,474.21,2100.0,900.0
+335,Intel Core i5 4ª Geração + 16GB RAM  + Placa-Mãe LGA 1150 (Leia a descrição),,350.0,cpu,LG,Core i5,4,16.0,,,,,,,,1533.25,1179.66,3419.05,900.0
+463,Mini PC Dell 3060 core i3 oitava geração,,1500.0,cpu,Dell,Core i3,,,,,,,,,,1570.83,500.0,2650.0,900.0
+503,Vendo notebook ( marca positivo),,1500.0,notebook,Positivo,,,,,,,,,,,439.51,304.93,627.33,1000.0
+422,Notebook ACER,,2099.0,notebook,Acer,,,,,,,,,,,439.51,221.25,694.77,1000.0
+428,Notebook Lenovo Core i5 8GB SSD256GB,,1300.0,notebook,Lenovo,Core i5,,8.0,,,SSD,,,,,1466.57,751.86,1899.21,1000.0
+322,Cooler de para Notebook Asus,,60.0,notebook,Asus,,,,,,,,,,,1000.0,616.93,6265.67,1000.0
+460,Notebook Lenovo I5-12Th-16GB RAM-SSD 256GB NVME-INTEL IRIS-XE-TELA 14HD,,2499.0,notebook,Lenovo,,,16.0,,256.0,SSD NVMe,INTEL IRIS,,,,1930.67,1394.25,4979.17,1000.0
+551,Notebook Acer E1-571-2348M 15 6 HD Core i3 4GB 500GB Windows 10 Home office!!!,,689.0,notebook,Acer,Core i3,,4.0,,,HDD,,,,,459.0,199.67,1266.33,1000.0
+259,Notebook Samsung i5 11ª Geração,,2399.0,notebook,Samsung,,11,,,,,,,,,1164.58,783.48,1652.5,1000.0
+339,Notebook Samsung,,899.0,notebook,Samsung,,,,,,,,,,,1080.0,668.93,1400.0,1000.0
+353,PC Gamer Ryzen 5500x3d 32gb,,5500.0,desktop,,Ryzen 5,,32.0,,,,,,,,1451.95,580.0,2800.0,1000.0
+361,Mini PC Positivo i5 DDR5,,1800.0,desktop,Positivo,,,,DDR5,,,,,,,180.0,64.75,1000.0,1000.0
+378,PC Gamer Completo + Teclado Mecânico + Mouse Logitech,,1999.0,desktop,,,,,,,,,,,,2936.38,2111.12,3763.32,1000.0
+412,Memória RAM 4GB DDR3 1600MHz DIMM Para PC Desktop,,110.0,desktop,,,,4.0,DDR3,,,,,,,68.33,61.42,288.37,1000.0
+504,"Vendo PC gamer completo roda vários jogos como ,ff, fortnite ,cs, etc...",,2500.0,desktop,,,,,,,,,,,,2936.38,2111.12,3763.32,1000.0
+555,Memória RAM DDR3 16 GB Micron 12800R,,110.0,desktop,,,,16.0,DDR3,,,,,,,525.0,305.38,1117.62,1000.0
+523,PC Gamer - Ryzen 5 + GTX 750 Ti,,1200.0,desktop,,Ryzen 5,,,,,,GTX 750 TI,,,,3446.02,2108.0,3503.72,1000.0
+289,Pc gamer,,7000.0,desktop,,,,,,,,,,,,2936.38,2111.12,3763.32,1000.0
