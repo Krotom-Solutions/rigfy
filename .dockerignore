@@ -1,0 +1,13 @@
+.git
+.github
+.vscode
+.agents
+.planning
+frontend/
+backend/.venv
+**/__pycache__
+**/*.pyc
+**/*.log
+backend/logs_coleta.txt
+backend/debug_olx.html
+logs_coleta.txt
