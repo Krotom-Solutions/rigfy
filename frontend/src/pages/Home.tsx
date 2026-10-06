@@ -26,11 +26,19 @@ export default function Home() {
       if (payload.ram_gb) {
         payload.ram_gb = parseInt(payload.ram_gb, 10)
       }
+      if (payload.storage_gb) {
+        payload.storage_gb = parseInt(payload.storage_gb, 10)
+      }
 
-      const response = await fetch('http://localhost:8000/price/predict', {
+      const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+      const response = await fetch(`${API_BASE_URL}/price/predict`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
+        body: JSON.stringify({
+          ...payload,
+          tem_nota_fiscal: !!formData.notaFiscal,
+          tem_garantia: !!formData.garantia,
+        })
       })
 
       if (!response.ok) throw new Error('Falha na conexão')

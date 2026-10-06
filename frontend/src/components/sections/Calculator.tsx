@@ -14,8 +14,8 @@ const ESTADOS = [
 export default function Calculator({ onCalculate, loading }: any) {
   const [form, setForm] = useState<any>({
     categoria: '', marca: '', cpu_linha: '',
-    ram_gb: '', storage_tipo: '',
-    ano: '', estado: '',
+    ram_gb: '', storage_tipo: '', storage_gb: '',
+    gpu: '', ano: '', estado: '',
     notaFiscal: false, garantia: false, acessorios: false,
   })
 
@@ -103,6 +103,34 @@ export default function Calculator({ onCalculate, loading }: any) {
                   <option value="SSD NVMe">SSD NVMe</option>
                 </Select>
               </div>
+
+              <Select label="Tamanho do Armazenamento" id="storage_gb" value={form.storage_gb} onChange={set('storage_gb')}>
+                <option value="">Selecione...</option>
+                <option value="128">128 GB</option>
+                <option value="256">256 GB</option>
+                <option value="500">500 GB</option>
+                <option value="1000">1 TB (1000 GB)</option>
+                <option value="2000">2 TB (2000 GB)</option>
+              </Select>
+
+              <Select label="Placa de Vídeo (GPU)" id="gpu" value={form.gpu} onChange={set('gpu')}>
+                <option value="">Integrada / Sem GPU Dedicada</option>
+                <optgroup label="NVIDIA (Mais Populares)">
+                  <option value="GTX 750 TI">GTX 750 Ti</option>
+                  <option value="GTX 1060">GTX 1060</option>
+                  <option value="GTX 1660">GTX 1660 / Super</option>
+                  <option value="RTX 3050">RTX 3050</option>
+                  <option value="RTX 3060">RTX 3060</option>
+                  <option value="RTX 3070">RTX 3070</option>
+                  <option value="RTX 4060">RTX 4060</option>
+                </optgroup>
+                <optgroup label="AMD">
+                  <option value="RX 580">RX 580</option>
+                  <option value="RX 6600">RX 6600</option>
+                  <option value="RX 7600">RX 7600</option>
+                </optgroup>
+                <option value="Outra">Outra</option>
+              </Select>
 
               <Select label="Ano de fabricação" id="ano" value={form.ano} onChange={set('ano')}>
                 <option value="">Selecione...</option>

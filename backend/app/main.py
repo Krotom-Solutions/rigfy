@@ -33,6 +33,7 @@ async def lifespan(app: FastAPI):
     logger.info("Carregando modelo Random Forest...")
     app.state.modelo_ml = carregar_modelo()
     if app.state.modelo_ml:
+        logger.info("Modelo ML carregado com sucesso!")
     else:
         logger.warning("⚠️ Nenhum modelo treinado encontrado em app/ml/")
         
